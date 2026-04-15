@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://shapetool.com/soap"
+            xmlns:tns="http://shapetool.com/soap"
+            elementFormDefault="qualified">
+
+    <!-- Circle -->
+    <xsd:element name="circleAreaRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="radius" type="xsd:double"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="circleAreaResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="area" type="xsd:double"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Square -->
+    <xsd:element name="squareAreaRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="side" type="xsd:double"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="squareAreaResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="area" type="xsd:double"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Rectangle -->
+    <xsd:element name="rectangleAreaRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="length" type="xsd:double"/>
+                <xsd:element name="width" type="xsd:double"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="rectangleAreaResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="area" type="xsd:double"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Parallelogram -->
+    <xsd:element name="parallelogramAreaRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="base" type="xsd:double"/>
+                <xsd:element name="height" type="xsd:double"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="parallelogramAreaResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="area" type="xsd:double"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Triangle -->
+    <xsd:element name="triangleAreaRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="base" type="xsd:double"/>
+                <xsd:element name="height" type="xsd:double"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="triangleAreaResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="area" type="xsd:double"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
